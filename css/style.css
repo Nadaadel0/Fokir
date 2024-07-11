@@ -1,0 +1,780 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-image: url(../images/slider-02.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+}
+
+.layerofheader {
+    background-color: #000000c8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+
+    width: 75%;
+}
+
+.navbar span {
+    color: #FF305B;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    float: left;
+    margin: 15px 0;
+
+}
+
+.navbar ul {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10px;
+    list-style: none;
+    float: right;
+
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.navbar ul a:hover {
+    color: #FF305B;
+
+}
+
+.clr {
+    clear: both;
+}
+
+.head-content {
+    text-align: center;
+
+}
+
+.head-content .p1 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    margin-top: 350px;
+
+}
+
+
+.head-content h1 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    color: #FF305B;
+    margin: 0;
+
+
+}
+
+.head-content p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    margin: 0;
+
+}
+
+.anim_parent {
+    position: relative;
+}
+
+.anim::after {
+    content: "";
+    width: 200px;
+    height: 50px;
+    background-color: #000000f5;
+    border-left: solid 5px white;
+    border-right: solid 1px transparent;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation: move 1.5s infinite alternate;
+}
+
+.anim {
+    animation: word 1.5s infinite alternate ;
+}
+
+@keyframes word {
+    0% {
+        color: transparent;
+    }
+
+ 
+    30% {
+        color: white;
+    }
+
+   
+    100% {
+        color: white;
+
+    }
+}
+
+@keyframes move {
+    100% {
+        left: 100%;
+
+    }
+}
+
+
+
+
+/*  ------------------about------------------------------------------------------------------------------------------------------------------ */
+.container1 {
+    width: 95%;
+    margin: auto;
+    /* background-color: tomato; */
+    padding: 50px 0;
+}
+
+.about-img {
+    /* background-color: #FF305B; */
+    width: 80%;
+    float: left;
+
+    border: 10px solid #555555;
+    border-radius: 5px;
+    position: relative;
+
+
+
+}
+
+.about-content {
+    /* background-color: teal; */
+    width: 80%;
+    float: left;
+    padding-left: 80px;
+
+}
+
+.image_layer {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    /* background-color: #FF305B; */
+    overflow: hidden;
+}
+
+.image_layer img {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+
+
+.layer1 {
+    background-color: rgba(0, 0, 0, .57);
+    position: absolute;
+    top: 100%;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+
+    transition: all 1s;
+}
+
+.layer1 i {
+    color: white;
+    padding: 50% 10px 0px;
+
+}
+
+.image_layer:hover .layer1 {
+    top: 0px;
+    opacity: 1;
+}
+
+h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    font-style: normal;
+    color: #333333;
+}
+
+.about-content h2::before {
+    content: "";
+    background-color: #FF305B;
+    width: 4px;
+    height: 23px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.horizontalline {
+    border: dashed 1px #CCCCCC;
+}
+
+p,
+table span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #555555;
+    line-height: 30px;
+
+}
+
+table {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+
+}
+
+td {
+    padding: 10px 0;
+}
+
+table a {
+    color: #7E7E7E;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+
+}
+
+button {
+    padding: 15px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    font-size: 16px;
+
+    background-color: #FF305B;
+    border: none;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: red;
+}
+
+/* -------------Our Services------------------------------------------- */
+.our_services {
+    background-color: #F1F1F1;
+    margin-top: 100px;
+}
+
+.our_services .container1 {
+    text-align: center;
+}
+
+.our_services h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    font-family: "Source Sans 3", sans-serif;
+
+}
+
+.line1,
+.line2,
+.line3 {
+
+    background-color: #ff305b;
+    display: inline-block;
+}
+
+.line1 {
+    margin-top: 10px;
+    width: 80px;
+    height: 1px;
+    transform: translate(121px, 5px);
+}
+
+.line2 {
+    width: 160px;
+    height: 1px;
+}
+
+.line3 {
+    transform: translate(-127px, -5px);
+
+    width: 80px;
+    height: 1px;
+}
+
+
+
+.item {
+    width: 100%;
+    float: left;
+    margin: 20px 0px;
+    padding: 40px 20px;
+    transition: all 1s;
+
+
+
+}
+
+.item h3 {
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 0;
+}
+
+.item i {
+
+    color: #FF305B;
+    font-size: 36px;
+    transition: all 1s;
+
+}
+
+.item:hover {
+    background-color: white;
+    border-radius: 5px;
+
+
+}
+
+.item:hover i {
+    transform: scale(1.2);
+}
+
+.item p {
+    font-size: 16px;
+}
+
+/* ------------portfolio-------------------------------------------- */
+.our_portfolio {
+    text-align: center;
+}
+
+
+
+.our_portfolio h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    font-family: "Source Sans 3", sans-serif;
+
+}
+
+.our_portfolio span {
+    display: inline-block;
+    margin: 40px 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #333333;
+}
+
+.item1 {
+    /* background-color: teal; */
+    width: 100%;
+    position: relative;
+    padding: 10px 10px;
+    float: left;
+
+
+}
+
+.item1 .inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.item1_img img {
+    width: 100%;
+
+}
+
+.layer_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(123, 120, 119, 0.675);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.layer_item i {
+    color: #ff305b;
+    padding: 380px 500px 0;
+
+    font-size: 24px;
+}
+
+.item1:hover .layer_item {
+    opacity: 1;
+
+}
+
+/* -----------------count--------------------------------- */
+.parent {
+    background-color: #F1F1F1;
+    text-align: center;
+    margin: 100px 0px;
+    padding: 50px 0px;
+}
+
+.count {
+    width: 100%;
+    float: left;
+}
+
+
+.count i {
+    font-size: 40px;
+    color: rgb(255, 48, 91);
+    padding: 20px 20px;
+    margin: 0;
+}
+
+.count .sp1 {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+    padding: 10px 20px;
+
+}
+
+.count .sp2 {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(85, 85, 85);
+    padding: 10px 20px;
+
+}
+
+/* ----------------------------Client's Feedback---------------------- */
+.feedback {
+    text-align: center;
+    margin: 20px 20px 40px 20px;
+}
+
+.feedback h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.container2 {
+    background-color: #F1F1F1;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 5px;
+
+    text-align: left;
+    /* position: relative; */
+}
+
+.feedback_content {
+    padding: 20px 0px 50px;
+    float: left;
+    width: 100%;
+
+}
+
+.fb_total {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.container2 h3 {
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+
+.container2 span {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #777777;
+    margin: 0;
+
+}
+
+
+.stars_rate i {
+    color: #F1C30D;
+}
+
+.borderl {
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    border-width: 120px;
+    border-style: solid;
+    border-color: #FF305B transparent transparent #FF305B;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo_fb {
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 33333;
+
+}
+
+.logo_fb img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* ----------------------blog----------------------------- */
+.container3 {
+    width: 95%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.blog {
+    background-color: #F1F1F1;
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.item2 {
+    width: 100%;
+    text-align: left;
+    padding: 40px 20px 80px;
+    float: left;
+
+
+}
+
+.inner1 {
+    background-color: white;
+    padding-bottom: 30px;
+
+}
+
+.item2 img {
+    width: 100%;
+}
+
+.item2 p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 15px;
+    margin: 0;
+}
+
+.item2 .link1 {
+    text-decoration: none;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    padding: 5px 15px;
+    transition: all 1s;
+}
+
+.item2 .link2 {
+    color: #000;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 5px 15px;
+    transition: all 1s;
+
+}
+
+.item2 .link1:hover,
+.item2 .link2:hover {
+    color: #FF305B;
+}
+
+/* ----------contact------------------------------------------------ */
+.Contact h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+
+}
+
+.contact_parent {
+    text-align: center;
+    margin: 100px 0px;
+    /* background-color: red; */
+}
+
+
+.part1 {
+    /* background-color: blue; */
+    width: 100%;
+    margin: auto;
+}
+
+.part1 input {
+    width: 80%;
+    margin: 30px 20px 10px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    border: #ccc 1px solid;
+
+}
+
+.part2,
+.part3 {
+    width: 100%;
+    /* background-color: #F1C30D; */
+    margin: auto;
+
+}
+
+.part2 input {
+    width: 80%;
+    margin: 10px 10px 30px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    border: #ccc 1px solid;
+
+
+}
+
+
+textarea {
+    width: 95%;
+
+    border-radius: 5px;
+    margin: 20px;
+    padding: 15px;
+    resize: none;
+    font-size: 16px;
+    border: #ccc 1px solid;
+
+    font-weight: 400;
+}
+
+form button {
+    border-radius: 5px;
+    background-color: #ff305b;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    margin: 20px;
+}
+
+.part4 {
+    width: 50%;
+
+    margin: auto;
+
+    text-align: left;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: red;
+}
+
+/* ----------------footer--------------------- */
+.footer {
+    text-align: center;
+    background-color: #333333;
+    padding: 60px 0px;
+}
+
+.footer1,
+.footer p {
+    color: white;
+}
+
+.footer span {
+    color: #FF305B;
+}
+
+.footer1 i {
+    padding: 20px 10px 10px;
+    font-size: 20px;
+
+}

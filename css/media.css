@@ -1,0 +1,179 @@
+/* sm */
+@media screen and (min-width:640px) {
+    
+}
+/* m */
+@media screen and (min-width:768px) {
+    .navbar ul {
+        font-size: 20px;
+
+    }
+    .head-content .p1 {
+        font-size: 28px;
+    }
+    .head-content h1 {
+        font-size: 90px;
+    }
+    .head-content p{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    /* -----------------about----------- */
+    .container1{
+        width: 80%;
+        /* width: 65%; */
+
+    }
+    .about-img{
+        width: 50%;
+    }
+    .about-content{
+        width: 50%;
+    }
+    /* ------------services-------------------------------------------- */
+    
+    .item{
+        width: 50%;
+    }
+    .our_services h2{
+        font-size: 50px;
+    }
+     .item h3{
+    
+    
+        font-size: 28px;
+     }
+     .item p{
+        font-size: 18px;
+    }
+    /* ------------portfolio-------------------------------------------- */
+
+    .item1{
+      
+        width: 50%;
+    }
+    .our_portfolio h2{
+        font-size: 50px;
+    }
+    .our_portfolio span{
+        font-size: 18px;
+    }
+    .count {
+        width: 25%;
+    }
+    .count .sp2 {
+        font-size: 18px;
+    }
+/* ----------------------------Client's Feedback---------------------- */
+    .container2 {
+        background-color: #F1F1F1;
+        width: 50%;
+}
+.feedback h2{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 50px;
+    
+}
+
+.container2 h3 {
+
+
+    font-size: 30px;
+}
+
+/* ----------------------------Blog---------------------- */
+
+.container3{
+    width: 80%;
+}
+
+.blog h2{
+   
+    font-size: 50px;
+}
+/* ----------------------------contact---------------------- */
+
+.Contact h2{
+ 
+    font-size: 50px;
+}
+.part1 , .part2 , .part3 {
+    
+ width: 50%;
+}
+.part1 input{
+    width: 45%;
+}
+.part2 input{
+    width: 95%;
+}
+}
+
+
+/*l */
+@media screen and (min-width:1024px) {
+    /* -----------------about----------- */
+   
+    .container1{
+        width: 65%;
+
+    } 
+    .about-img{
+        width: 40%;
+    }
+    .about-content{
+        width: 60%;
+    }
+    .container3{
+        width: 75%;
+    }
+    .item2{
+        width: 33.33%;
+    }
+
+
+}
+
+
+
+
+/* xl */
+@media screen and (min-width:1280px) {
+    /* ------------services-------------------------------------------- */
+
+    .item{
+        width: 25%;
+    }
+    /* ------------portfolio-------------------------------------------- */
+
+    .item1{
+      
+        width: 33.33%;
+    }
+    .layer_item i{
+        padding:260px 360px  0;
+    }
+    .item2 .link1{
+       
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    /* ------------fb------------------------------------------- */
+
+    .feedback_content {
+   
+        width: 75%;
+    }
+    .fb_total{
+       
+        width: 25%;
+    }
+}
+
+
+
+/* 2xl */
+@media screen and (min-width:1536px) {
+    
+}
